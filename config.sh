@@ -1,7 +1,8 @@
 #
-echo "installing gnome-tweak-tool, vim .." 
-sudo apt install gnome-tweak-tool
-sudo apt-get install vim
+echo "installing gnome-tweak-tool, vim, git .." 
+sudo apt-get install -y gnome-tweak-tool
+sudo apt-get install -y vim
+sudo apt-get install -y git 
 # theme and icons
 ## preemptive defense
 sudo mkdir ~/.local/share/icons
@@ -10,7 +11,10 @@ echo "installing icons .."
 sudo cp -R ./icons/* ~/.local/share/icons
 echo "installing themes .."
 sudo cp -R ./themes/* ~/.local/share/themes
-sudo apt-get install gnome-shell-extension-top-icons-plus
+# gnome-shell-extensions
+sudo apt-get install -y gnome-shell-extensions
+sudo apt install -y chrome-gnome-shell
+sudo apt-get install -y gnome-shell-extension-top-icons-plus
 # git lfs
 echo "installing git-lfs..".
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
