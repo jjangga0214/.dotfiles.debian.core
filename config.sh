@@ -3,6 +3,8 @@ echo "installing gnome-tweak-tool, vim, git .."
 sudo apt-get install -y gnome-tweak-tool
 sudo apt-get install -y vim
 sudo apt-get install -y git 
+# git 인증 cache 를 50분(3000초)으로 등록.
+git config --global credential.helper 'cache --timeout=3000'
 # theme and icons
 ## preemptive defense
 sudo mkdir ~/.local/share/icons
