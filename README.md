@@ -23,7 +23,10 @@ sudo sh config.sh
 
 ##### 마운트 지점(path to mount) 예시
 ```bash
+# 마운트 지점 생성
 sudo mkdir /media/user/KALI
+# 일시적 마운트 
+sudo mount /dev/sda2 /media/user/KALI
 ```
 ##### 디스크 -> 마운트 옵션 변경
 **디스크** 프로그램을 실행한다.
