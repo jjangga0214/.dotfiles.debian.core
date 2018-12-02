@@ -24,8 +24,8 @@ y
 [출처](https://help.ubuntu.com/community/Boot-Repair)
 ```bash
 sudo add-apt-repository ppa:yannubuntu/boot-repair
-sudo apt-get update
-sudo apt-get install -y boot-repair && boot-repair
+sudo apt update
+sudo apt install -y boot-repair && boot-repair
 ```
 
 ### 작업
