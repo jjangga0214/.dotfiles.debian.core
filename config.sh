@@ -1,12 +1,14 @@
 #!/bin/bash
-echo "installing gnome-tweak-tool, vim, git .." 
-apt install -y gnome-tweak-tool vim git
+echo "installing gnome-tweak-tool, vim, git, snapd(for old ubuntu) .." 
+apt install -y gnome-tweak-tool vim git snapd
 # git 인증 cache 를 50분(3000초)으로 등록.
 git config --global credential.helper 'cache --timeout=3000'
 # git lfs
 echo "installing git-lfs..".
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 apt install -y git-lfs
+# gitkraken
+snap install gitkraken --devmode
 # theme and icons
 ## preemptive defense
 tdest=~/.local/share/icons
