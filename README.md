@@ -1,6 +1,41 @@
 # ubuntu.config
 
+## precaution
+* icons, themes 가 최신 버전으로 갱신되었는지 확인한다
+
 ## automatic
+### 참고 
+* <https://www.opendesktop.org/>
+* <https://www.gnome-look.org>
+* <https://extensions.gnome.org/> : gnome shell extensions
+
+
+### icons
+* [OSX_ONE](https://www.gnome-look.org/p/1218021/) -> ./icons/OSX_ONE9.2.tar.xz
+* [MacOS sierra ct](https://www.gnome-look.org/p/1210856/) -> ./icons/Macos-sierra-CT-0.8.6.tar.gz
+* [Flat-Remix](https://www.gnome-look.org/p/1012430/) -> repository(ppa:daniruiz/flat-remix) 에서 바로 받는다.
+* [numix-icon-theme-circle](https://github.com/numixproject/numix-icon-theme-circle) -> repository(ppa:numix/ppa) 에서 바로 받는다.
+
+### theme
+* [Ant Themes](https://www.gnome-look.org/p/1099856/) -> ./themes/[Ant.tar, Ant-*.tar]
+* [flat-remix-gtk](https://github.com/daniruiz/flat-remix-gtk) -> repository(ppa:daniruiz/flat-remix) 에서 바로 받는다.
+* gtk-common-themes -> `snap install gtk-common-themes`
+
+## gnome shell
+* flat-remix-gnome: [gnome-look](https://www.gnome-look.org/p/1013030/), [github](https://github.com/daniruiz/Flat-Remix-GNOME-theme) -> repository(ppa:daniruiz/flat-remix) 에서 바로 받는다.
+
+## programs
+* gitkraken -> `snap install gitkraken --devmode`
+* vscode -> `snap install vscode --classic`
+* shutter
+* boot-repair
+* git, git-lfs, vim, gnome-tweak-tool, snapd
+* ampareinvertcolor
+* slack -> `snap install slack --classic`
+* xclip
+
+## install
+script 로 설치할 수 있는 것들을 설치한다. 
 ```bash
 sudo sh config.sh
 ```
