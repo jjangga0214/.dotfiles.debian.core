@@ -2,13 +2,19 @@
 ubuntu를 설치한 직후 환경을 구성한다. icons, cursors, themes, programs 들을 설치한다. 
 
 ## precaution
-* icons, themes 가 최신 버전으로 갱신되었는지 확인한다
+* icons, cursor, themes 등 이 프로젝트 내부에 static 한 압축파일로 존재하는 내용물이 최신 버전으로 갱신되었는지 확인한다
 
 ## automatic
 ### 참고 
 * <https://www.opendesktop.org/>
 * <https://www.gnome-look.org>
-* <https://extensions.gnome.org/> : gnome shell extensions
+* <https://extensions.gnome.org/> : gnome extensions
+
+### install
+script 로 아래에 명시된 것들을 설치한다. `sh` 명령어 대신 `bash`를 사용한다.   
+```bash
+sudo bash install.sh
+```
 
 ### icons
 * [OSX_ONE](https://www.gnome-look.org/p/1218021/) -> ./icons/OSX_ONE9.2.tar.xz
@@ -37,23 +43,18 @@ ubuntu를 설치한 직후 환경을 구성한다. icons, cursors, themes, progr
 * git, git-lfs, vim, gnome-tweak-tool, snapd
 * ampareinvertcolor
 * slack -> `snap install slack --classic`
-* xclip
+* xclip -> 클립보드에 복사 기능을 `c` 라는 alias 로 등록한다. 
 * nodejs
 * go -> `snap install go --classic`
 * uim (입력기)
 
-### install
-script 로 설치할 수 있는 것들을 설치한다. `sh` 대신 `bash`를 사용한다.   
-```bash
-sudo bash config.sh
-```
-
 ## manual
-### gnome 관련
-#### extensions.gnome.org
-**extensions.gnome.org** 은 말 그대로 여러 gnome 확장을 설치할 수 있는 사이트이다. 
+
+### gnome extension
+**extensions.gnome.org** 은 말 그대로 여러 gnome 확장(gnome extension)을 설치할 수 있는 사이트이다. 
 [크롬](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=ko) 또는 [파이어폭스](https://addons.mozilla.org/ko/firefox/addon/gnome-shell-integration/?src=search) 에서 **그놈 쉘 확장 기능** 플러그인을 설치한다. 그리고 **extensions.gnome.org** 을 방문해 [User Themes](https://extensions.gnome.org/extension/19/user-themes/) 를 ON 으로 켜 준다.
-##### 설치목록  
+
+#### 설치목록  
 * [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 * [Screenshot Tool](https://extensions.gnome.org/extension/1112/screenshot-tool/)
 
