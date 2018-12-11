@@ -16,15 +16,20 @@
 * [Flat-Remix](https://www.gnome-look.org/p/1012430/) -> repository(ppa:daniruiz/flat-remix) 에서 바로 받는다.
 * [numix-icon-theme-circle](https://github.com/numixproject/numix-icon-theme-circle) -> repository(ppa:numix/ppa) 에서 바로 받는다.
 
+### cursors
+* [Oxygen Neon](https://www.gnome-look.org/p/999997/) -> ./icons/137109-oxy-neon-0.2.tar.gz
+* [Capitaine](https://www.gnome-look.org/p/1148692/) -> ./icons/capitaine-cursors-r2.1.tar.gz
+* ~~[Bibata](https://www.gnome-look.org/p/1197198/) -> ./others/Bibata_Cursor_master.zip 를 압축을 풀고 빌드한다. ~~ 
+
 ### theme
 * [Ant Themes](https://www.gnome-look.org/p/1099856/) -> ./themes/[Ant.tar, Ant-*.tar]
 * [flat-remix-gtk](https://github.com/daniruiz/flat-remix-gtk) -> repository(ppa:daniruiz/flat-remix) 에서 바로 받는다.
 * gtk-common-themes -> `snap install gtk-common-themes`
 
-## gnome shell
+### gnome shell
 * flat-remix-gnome: [gnome-look](https://www.gnome-look.org/p/1013030/), [github](https://github.com/daniruiz/Flat-Remix-GNOME-theme) -> repository(ppa:daniruiz/flat-remix) 에서 바로 받는다.
 
-## programs
+### programs
 * gitkraken -> `snap install gitkraken --devmode`
 * vscode -> `snap install vscode --classic`
 * shutter
@@ -35,9 +40,9 @@
 * xclip
 
 ## install
-script 로 설치할 수 있는 것들을 설치한다. 
+script 로 설치할 수 있는 것들을 설치한다. `sh` 대신 `bash`를 사용한다.   
 ```bash
-sudo sh config.sh
+sudo bash config.sh
 ```
 
 ## handed
@@ -48,7 +53,6 @@ sudo sh config.sh
 ##### 설치목록  
 * [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 * [Screenshot Tool](https://extensions.gnome.org/extension/1112/screenshot-tool/)
-
 
 ### 개발환경
 * JetBrains Toolbox
