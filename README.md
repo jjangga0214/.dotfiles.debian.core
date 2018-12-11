@@ -45,8 +45,9 @@ sudo bash install.sh
 * slack -> `snap install slack --classic`
 * xclip -> 클립보드에 복사 기능을 `c` 라는 alias 로 등록한다. 
 * nodejs
-* go -> `snap install go --classic`
+* ~~go -> `snap install go --classic`~~
 * uim (입력기)
+* zsh, oh-my-zsh
 
 ## manual
 
@@ -77,3 +78,11 @@ sudo mount /dev/sda2 /media/user/KALI
 gnome-disk
 ```
 **추가 파티션 옵션** -> **마운트 옵션 편집** -> [**시작할 때 시스템에 마운트** 체크, **마운트 지점** 설정 (예: /media/user/KALI)] 
+
+## on development
+**sync.sh**는 다음 두가지를 실행한다.
+* wallpapers.ignore 디렉토리를 wallpaper 라는 디렉토리의 이름으로 wallpaper.tar.gz 로 압축
+* ~/.zshrc 를 ./others/.zshrc 로 복사
+```bash
+sh sync.sh
+```

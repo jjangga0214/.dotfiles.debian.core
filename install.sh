@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "installing gnome-tweak-tool, vim, git, snapd(for old ubuntu), unzip, nodejs .." 
-apt install -y gnome-tweak-tool vim git snapd unzip nodejs npm build-essential 
-sudo snap install go --classic
+apt install -y gnome-tweak-tool vim git snapd unzip nodejs npm build-essential curl
+# sudo snap install go --classic
 echo "installing uim for Korean supoort rather than iBus, which is default on ubuntu 18.04"
 apt install uim uim 
 # git 인증 cache 를 50분(3000초)으로 등록.
@@ -121,3 +121,11 @@ source ~/.bashrc
 ## chmod +x ./others/Installer_Bibata.sh
 ## ./others/Installer_Bibata.sh 
 ## mv ./others/Bibata_* $idest
+# zsh
+apt install zsh
+echo "installing oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cp others/.zshrc ~/.zshrc
+sudo -s
+chsh -s $(which zsh)
+chsh -s $(which zsh) user
