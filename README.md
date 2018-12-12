@@ -53,7 +53,7 @@ sudo bash install.sh
 
 ### gnome extension
 **extensions.gnome.org** 은 말 그대로 여러 gnome 확장(gnome extension)을 설치할 수 있는 사이트이다. 
-[크롬](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=ko) 또는 [파이어폭스](https://addons.mozilla.org/ko/firefox/addon/gnome-shell-integration/?src=search) 에서 **그놈 쉘 확장 기능** 플러그인을 설치한다. 그리고 **extensions.gnome.org** 을 방문해 [User Themes](https://extensions.gnome.org/extension/19/user-themes/) 를 ON 으로 켜 준다.
+크롬 또는 파이어폭스에서 **그놈 쉘 확장 기능** 플러그인\( [파이어폭스](https://addons.mozilla.org/ko/firefox/addon/gnome-shell-integration/?src=search) | [크롬](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep?hl=ko) \)을 설치한다. 그리고 **extensions.gnome.org** 을 방문해 [User Themes](https://extensions.gnome.org/extension/19/user-themes/) 를 ON 으로 켜 준다.
 
 #### 설치목록  
 * [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
@@ -98,10 +98,10 @@ zsh 에서 다음을 실행한다. 명령어 스펠링 체크를 활성화한다
 ```zsh
 setopt correct
 ```
-s
+
 ## on development
 **sync.sh**는 다음 두가지를 실행한다.
-* wallpapers.ignore 디렉토리를 wallpaper 라는 디렉토리의 이름으로 wallpaper.tar.gz 로 압축
+* wallpapers.ignore 디렉토리를 wallpapers 라는 디렉토리의 이름으로 wallpapers.tar.gz 로 압축
 * ~/.zshrc 를 ./others/.zshrc 로 복사
 ```bash
 sh sync.sh
