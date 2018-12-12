@@ -79,6 +79,26 @@ gnome-disk
 ```
 **추가 파티션 옵션** -> **마운트 옵션 편집** -> [**시작할 때 시스템에 마운트** 체크, **마운트 지점** 설정 (예: /media/user/KALI)] 
 
+### zsh
+zsh 만 적용하고 싶다면 다음을 실행한다. *others/zsh.install.sh* 는 *install.sh* 에서 실행하니, 
+*install.sh* 를 실행했다면 따로 실행할 필요없이 다음 명령어인 `chsh` 를 실행하면 된다.
+```bash
+sudo bash others/zsh.install.sh
+```
+  
+bash 에서 다음을 실행한다.
+```bash
+sudo -s
+chsh -s $(which zsh)
+chsh -s $(which zsh) user
+```
+이후 reboot 하면 default shell 이 zsh 로 적용된다. 
+  
+zsh 에서 다음을 실행한다. 명령어 스펠링 체크를 활성화한다.
+```zsh
+setopt correct
+```
+s
 ## on development
 **sync.sh**는 다음 두가지를 실행한다.
 * wallpapers.ignore 디렉토리를 wallpaper 라는 디렉토리의 이름으로 wallpaper.tar.gz 로 압축
@@ -86,3 +106,4 @@ gnome-disk
 ```bash
 sh sync.sh
 ```
+

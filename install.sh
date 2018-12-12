@@ -122,10 +122,6 @@ source ~/.bashrc
 ## ./others/Installer_Bibata.sh 
 ## mv ./others/Bibata_* $idest
 # zsh
-apt install zsh
-echo "installing oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp others/.zshrc ~/.zshrc
-sudo -s
-chsh -s $(which zsh)
-chsh -s $(which zsh) user
+bash scripts/zsh.install.sh
+# hangul.sh for uim 입력기
+cp others/hangul.sh ~
