@@ -112,3 +112,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vz="vi ~/.zshrc"
+alias gz="gedit ~/.zshrc"
+alias ge="gedit"
+alias c="xclip -selection clipboard"
+alias s="cd /media/user/SHARE"
