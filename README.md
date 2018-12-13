@@ -99,6 +99,12 @@ zsh 에서 다음을 실행한다. 명령어 스펠링 체크를 활성화한다
 setopt correct
 ```
 
+### nautilus
+만약 /var/lib/samba/usershares/ 가 없다면, Nautilus 실행시 `net usershare info` 명령어가 실행되지 못하므로, 아래처럼 디렉토리를 추가해준다. [출처](https://askubuntu.com/questions/798928/nautilus-share-message-called-net-usershare-info-but-it-failed)
+```bash
+sudo mkdir -p /var/lib/samba/usershares/
+```
+
 ## on development
 **sync.sh**는 다음 두가지를 실행한다.
 * wallpapers.ignore 디렉토리를 wallpapers 라는 디렉토리의 이름으로 wallpapers.tar.gz 로 압축

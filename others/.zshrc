@@ -104,6 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+export s="/media/user/SHARE"
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -112,8 +114,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vz="vi ~/.zshrc"
-alias gz="gedit ~/.zshrc"
+alias vz="vi ~/.zshrc &!"
+alias gz="gedit ~/.zshrc &!"
 alias ge="gedit"
 alias c="xclip -selection clipboard"
-alias s="cd /media/user/SHARE"
+alias v="xclip -out -selection clipboard"
+alias d="curl $(xclip -out -selection clipboard)"
+alias s="/media/user/SHARE"
+alias h="sh ~/hangul.sh"
+alias sz="source ~/.zshrc"
+alias e="exit"
+alias gl="git log --graph --oneline"
+alias xo="xdg-open"
+alias n="nautilus . &!"
