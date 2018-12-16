@@ -125,3 +125,5 @@ source ~/.bashrc
 bash scripts/zsh.install.sh
 # hangul.sh for uim 입력기
 cp others/hangul.sh ~
+# [sindresorhus/public-ip-cli](https://github.com/sindresorhus/public-ip-cli)
+npm i -g public-ip-cli
