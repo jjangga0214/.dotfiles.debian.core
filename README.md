@@ -105,6 +105,9 @@ setopt correct
 sudo mkdir -p /var/lib/samba/usershares/
 ```
 
+### gpg 와 git
+[여기](https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc) 를 참고한다.
+
 ## on development
 **sync.sh**는 다음 두가지를 실행한다.
 * wallpapers.ignore 디렉토리를 wallpapers 라는 디렉토리의 이름으로 wallpapers.tar.gz 로 압축
