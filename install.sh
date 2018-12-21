@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "installing gnome-tweak-tool, vim, git, gpa, seahorse, xz-utils, snapd(for old ubuntu), unzip, nodejs .." 
-apt install -y gnome-tweak-tool vim git gpa xz-utils seahorse snapd unzip nodejs npm build-essential curl 
+echo "installing gnome-tweak-tool, vim, git, gpa, seahorse, xz-utils, snapd(for old ubuntu), unzip, nodejs, trash-cli .." 
+apt install -y gnome-tweak-tool vim git gpa xz-utils seahorse snapd unzip nodejs npm build-essential  curl trash-cli
 # sudo snap install go --classic
 echo "installing uim for Korean supoort rather than iBus, which is default on ubuntu 18.04"
 apt install uim uim 
