@@ -2,3 +2,5 @@
 *.ignore.*
 *.ignore/**
 *.ignore.*/**
+
+.idea/**
