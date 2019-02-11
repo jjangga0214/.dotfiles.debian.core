@@ -1,12 +1,12 @@
 # zsh
-alias vz="vi ~/.zshrc"
-alias gz="gedit ~/.zshrc &!"
-alias sz="source ~/.zshrc"
+alias zr="vi ~/.zshrc"
+alias zrg="gedit ~/.zshrc &!"
+alias zs="source ~/.zshrc"
 
 ## ohmyzsh
 alias zc="$ZSH_CUSTOM"
-alias vza="vi $ZSH_CUSTOM/aliases.zsh"
-alias gza="gedit $ZSH_CUSTOM/aliases.zsh &!"
+alias za="vi $ZSH_CUSTOM/aliases.zsh"
+alias zag="gedit $ZSH_CUSTOM/aliases.zsh &!"
 
 # cli
 
@@ -16,10 +16,10 @@ alias e="exit"
 alias llg="ll | grep"
 
 ## util
-alias c="xclip -selection clipboard"
-alias v="xclip -out -selection clipboard"
-alias d="curl '$(xclip -out -selection clipboard)'"
-alias ev="echo '$(xclip -out -selection clipboard)'"
+alias c="xclip -sel clip"
+alias v="xclip -o -sel clip"
+alias d="curl '$(xclip -o -sel clip)'"
+alias ev="echo '$(xclip -o -sel clip)'"
 alias th="trash"
 
 ## dev
