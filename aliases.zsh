@@ -23,6 +23,7 @@ alias ev="echo '$(xclip -o -sel clip)'"
 alias th="trash"
 
 ## dev
+alias g_="git commit -m"
 alias gl="git log --graph --oneline"
 alias yl="yarn run lint"
 alias ys="yarn run serve"
