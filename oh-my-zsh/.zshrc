@@ -2,30 +2,19 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/user/.oh-my-zsh"
-
-# [alias-tips](https://github.com/djui/alias-tips)
-export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias tip: "
+  export ZSH="/home/gilchan/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="random"
-# ZSH_THEME="refined"
-# ZSH_THEME=""
-
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( 
-	"robbyrussell" 
-	"agnoster" 
-	"dracula"
-	"ys"
-	)
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -73,16 +62,9 @@ ZSH_THEME_RANDOM_CANDIDATES=(
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  alias-tips
-)
+plugins=(git zsh-syntax-highlighting alias-tips)
 
 source $ZSH/oh-my-zsh.sh
-
-# [pure](https://github.com/sindresorhus/pure#oh-my-zsh)
-# autoload -U promptinit; promptinit
-# prompt pure
 
 # User configuration
 
@@ -104,10 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export s="/media/user/SHARE"
-alias ll="ls -al"
-#export GPG_TTY=$(tty)
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -116,26 +94,3 @@ alias ll="ls -al"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vz="vi ~/.zshrc &!"
-alias gz="gedit ~/.zshrc &!"
-alias ge="gedit"
-alias c="xclip -selection clipboard"
-alias v="xclip -out -selection clipboard"
-alias d="curl '$(xclip -out -selection clipboard)'"
-alias ev="echo '$(xclip -out -selection clipboard)'"
-alias s="/media/user/SHARE"
-alias h="sh ~/hangul.sh && exit;"
-alias sz="source ~/.zshrc"
-alias e="exit"
-alias gl="git log --graph --oneline"
-alias xo="xdg-open"
-alias n="nautilus . &!"
-alias jw="webstorm"
-alias jw_="webstorm . &!"
-alias co="code"
-alias co_="code . &!"
-alias gk="gitkraken"
-alias t="touch"
-alias yl="yarn run lint"
-alias ys="yarn run serve"
-alias th="trash"

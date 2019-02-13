@@ -1,0 +1,22 @@
+# others
+
+## installation
+
+### [snap.sh](snap.sh)
+
+This installs snap applications.
+
+- __util__: wavebox, vlc, tusk
+- __dev__: gitkraken  
+
+```bash
+sudo sh snap.sh
+```
+
+## config
+
+### [config.sh](config.sh)
+
+This is intended to config the system globally as well as specific tools.
+
+- __dev__: git
