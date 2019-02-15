@@ -35,7 +35,7 @@ alias s="cd /media/gilchan/SHARE"
 
 ## env
 alias xo="xdg-open"
-alias n="nautilus . &!"
+alias f="nautilus . &!"
 
 ## dev
 alias jw="webstorm . &!"

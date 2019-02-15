@@ -4,7 +4,24 @@
 
 ## custom
 
-Put custom files under `$ZSH_CUSTOM`, which would be `~/.oh-my-zsh/custom`. [aliases.zsh](aliases.zsh), [env.zsh](env.zsh), and [functions.zsh](functions.zsh) are respectively for aliases, environment variables, functions exposed to the user.
+Put custom configuration under `$ZSH_CUSTOM`, which would be `~/.oh-my-zsh/custom`. Every configurations under `$ZSH_CUSTOM` is intended to be for client(user) rather than internal use.  
+
+### [aliases.zsh](aliases.zsh)
+
+This defines aliases.
+
+### [env.zsh](env.zsh)
+
+This defines environment variables.
+
+### [functions.zsh](functions.zsh)
+
+This defines functions.
+
+### nvm.zsh
+
+- loads nvm.
+- autoloads default node vesion.
 
 ## plugins
 

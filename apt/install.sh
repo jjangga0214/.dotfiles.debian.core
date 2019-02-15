@@ -1,3 +1,5 @@
+BASE_DIR=$(dirname "$0")
+
 # The order is important. For example, curl should be installed before executing `sh apt.docker.install.sh`
 
 apt update
@@ -11,6 +13,9 @@ apt install -y fonts-powerline
 apt install -y p7zip-full
 # apt install -y gnome-shell-extensions
 apt install -y chrome-gnome-shell
+apt install -y libssl-dev
+apt install -y build-essential
+sudo apt install gcc g++ make
 
 # util
 apt install -y xclip
@@ -23,4 +28,4 @@ apt install -y boot-repair
 apt install -y git
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 apt install -y git-lfs
-sh docker.sh
+sh $BASE_DIR/docker.sh
