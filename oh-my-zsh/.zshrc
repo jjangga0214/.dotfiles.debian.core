@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/gilchan/.oh-my-zsh"
+  export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -62,7 +62,41 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting alias-tips)
+plugins=(
+# custom
+zsh-syntax-highlighting 
+alias-tips
+# official
+yarn
+vscode
+ubuntu
+python
+postgres
+pip
+nvm
+npm
+npx
+node
+man
+kubectl
+kube-ps1
+jsontools
+heroku
+helm
+golang
+git 
+gitignore
+git-extras
+emoji
+docker
+docker-compose
+docker-machine
+cp
+command-not-found
+colorize
+colored-man-pages
+aws
+)
 
 source $ZSH/oh-my-zsh.sh
 

@@ -3,10 +3,9 @@ alias zr="vi ~/.zshrc"
 alias zrg="gedit ~/.zshrc &!"
 alias zs="source ~/.zshrc"
 
-## ohmyzsh
+## ohmyzsh: $ZSH_CUSTOM
 alias zc="cd $ZSH_CUSTOM"
-alias za="vi $ZSH_CUSTOM/aliases.zsh"
-alias zag="gedit $ZSH_CUSTOM/aliases.zsh &!"
+alias zca="ccat $ZSH_CUSTOM/aliases.zsh"
 
 # cli
 
@@ -18,8 +17,6 @@ alias llg="ls -lah | grep"
 ## util
 alias c="xclip -sel clip"
 alias v="xclip -o -sel clip"
-alias d="curl '$(xclip -o -sel clip)' -O"
-alias ev="echo '$(xclip -o -sel clip)'"
 alias th="trash"
 
 ## dev
@@ -27,9 +24,15 @@ alias g_="git commit -m"
 alias gl="git log --graph --oneline"
 alias yl="yarn run lint"
 alias ys="yarn run serve"
+alias jest="npx jest"
+
 
 ## env
+alias p="ccat"
+alias dot="cd ~/.dotfiles"
 alias s="cd /media/gilchan/SHARE"
+alias pathpretty="tr ':' '\n' <<< $PATH"
+
 
 # app
 
@@ -39,7 +42,5 @@ alias f="nautilus . &!"
 
 ## dev
 alias jw="webstorm . &!"
-# alias jw_="webstorm . &!"
-alias co="code . &!"
-# alias co_="code . &!"
+alias vsc="code . &!"
 alias gk="gitkraken"

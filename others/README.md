@@ -7,10 +7,10 @@
 This installs snap applications.
 
 - __util__: wavebox, vlc, tusk
-- __dev__: gitkraken  
+- __dev__: gitkraken, heroku  
 
 ```bash
-sudo sh snap.sh
+sudo bash snap.sh
 ```
 
 ## config
