@@ -1,14 +1,16 @@
 # :warning: CAUTION
 
-Every execution, installation, configuration is only tested on ubuntu 18.10, though it would be  theoretically easy to tweak for other linux distos or unix-like oses.
+## general
+
+Every execution, installation, configuration is only tested on ubuntu 18.10, though it would be theoretically easy to tweak for other linux distos or unix-like oses.
 
 ## [install.sh](install.sh)
 
-This internally executes the following shell script. So, before executing [install.sh](install.sh), be careful of cautions below.
+This internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.
 
 ### [apt/install.sh](apt/install.sh)
 
-This literally only works with apt. 
+This literally only works with apt.
 
 #### [apt/docker.sh](apt/docker.sh)
 
@@ -17,3 +19,7 @@ This literally only works with apt.
 3. This only works for ubuntu. However, ubuntu version does not matter.
 
 Refer [the official website's explanation](https://docs.docker.com/install/linux/docker-ce/ubuntu/) if needed.
+
+### [node/install.sh](node/install.sh)
+
+[install.sh](install.sh) exports env var `$NODE_VER=11` and [node/install.sh](node/install.sh) uses `$NODE_VER`. If you want to install other version of node on system, just edit `$NODE_VER` on [install.sh](install.sh).

@@ -2,7 +2,7 @@
 
 ## [install.sh](install.sh)
 
-This is for installing node, npm, yarn, nvm, and global npm packages. You need to export `$NODE_VER`.
+This is for installing node, npm, yarn, nvm, and global npm packages. You need to export `$NODE_VER` as integer.
 
 ```bash
 sudo NODE_VER=11 bash install.sh
