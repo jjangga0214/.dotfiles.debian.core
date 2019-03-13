@@ -3,6 +3,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # ref: https://github.com/creationix/nvm#zsh
+# This automatically calls `nvm use` when entering into directory, which has '.nvmrc' file
 # place this after nvm initialization!
 autoload -U add-zsh-hook
 load-nvmrc() {

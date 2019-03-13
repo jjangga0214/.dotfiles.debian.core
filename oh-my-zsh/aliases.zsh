@@ -7,6 +7,7 @@ alias zs="source ~/.zshrc"
 alias zc="cd $ZSH_CUSTOM"
 alias zca="ccat $ZSH_CUSTOM/aliases.zsh"
 
+
 # cli
 
 ## os, preinstalled

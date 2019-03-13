@@ -1,34 +1,29 @@
 # node
 
-## :warning: CAUTION
-
-Before installing, check node version on [node.sh](./node.sh). In the file, change a value of `$NODE_VER` variable for the desired version rather than predefined default version (currently 11).  
-
 ## [install.sh](install.sh)
 
-This is for installing node, npm, yarn, nvm, and global npm packages.
+This is for installing node, npm, yarn, nvm, and global npm packages. You need to set `$NODE_VER`.
 
 ```bash
-sudo sh install.sh
+sudo NODE_VER=11 bash install.sh
 ```
-
-This executes the followings.
 
 ### [node.sh](./node.sh)
 
-This installs node, npm, yarn directly on system, NOT as virtual environments.
-In order to install desired version, this registers official PPAs of node and yarn, ignoring ubuntu's official `nodejs` apt package.
+This installs node, npm, yarn directly on system, NOT as virtual environments by nvm. In order to install desired version, this registers official PPAs of node and yarn, ignoring ubuntu's official `nodejs` apt package.
 
 ### [nvm.sh](nvm.sh)
 
-This installs nvm.
+This installs nvm. nvm provides one-liner installation. However, **nvm.sh** does not use it. That's to prevent nvm config code written to .zshrc. Rather, nvm config is pre-written to dedicated file([../oh-my-zsh/nvm.zsh](../oh-my-zsh/nvm.zsh)), which would be in `$ZSH_CUSTOM` directory.
+
+<small>ref: <https://github.com/creationix/nvm#manual-install> </small>
 
 ### [pkg.sh](pkg.sh)
 
-This installs global npm packages.
+By using nvm, global npm packages are installed and managed seperately between nodes with different versions. So, if a certain package does not necessarily reinstalled, it'd be good to use 'system node', which is directly installed to os.
 
-- public-ip-cli [[1]](#1)
+[pkg.sh](pkg.sh) installs global packages on 'system node'. For this strategy, execute `nvm use system` and then handle global packages.
 
-## references
-
-- <a name="1">[1]</a>: [sindresorhus/public-ip-cli](https://github.com/sindresorhus/public-ip-cli)
+```bash
+nvm use system && npm i -g <pkg>
+```

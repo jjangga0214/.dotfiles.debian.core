@@ -1,3 +1,5 @@
+# This upgrades nvm. 
+# This script is called in ../updrade.sh
 (
   cd "$NVM_DIR"
   git fetch --tags origin

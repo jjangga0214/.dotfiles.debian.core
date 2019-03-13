@@ -1,34 +1,33 @@
-## oh-my-zsh
+# oh-my-zsh
 
-**oh-my-zsh** is used as a framework for zsh.
+## [install.sh](install.sh)
 
-## custom
+__This assumes zsh is already installed.__ This installs oh-my-zsh and plugins. This also calls [config.sh](config.sh). Finally, this copies [.zshrc](.zshrc) under `$HOME`.
 
-Put custom configuration under `$ZSH_CUSTOM`, which would be `~/.oh-my-zsh/custom`. Every configurations under `$ZSH_CUSTOM` is intended to be for client(user) rather than internal use.  
+```bash
+sudo bash install.sh
+```
 
-### [aliases.zsh](aliases.zsh)
+## [config.sh](config.sh)
 
-This defines aliases.
+This sets aliases, functions, env vars and nvm by copying them under `$ZSH_CUSTOM`, which would be `~/.oh-my-zsh/custom`.
 
-### [env.zsh](env.zsh)
+```bash
+zsh config.sh
+```
 
-This defines environment variables.
+## maintenance of zsh and oh-my-zsh
 
-### [functions.zsh](functions.zsh)
+Some envionment-related tools to be integrated with shell write their config code on $HOME/.zshrc by themselves. So, to keep this project in sync, it's important to override .zshrc(in this project) by $HOME/.zshrc.
 
-This defines functions.
+For consistency, even when manual change is written, write it directly on $HOME/.zshrc and copies the file to this project.
 
-### nvm.zsh
+```bash
+cp ~/zshrc ./.zshrc
+```
 
-- loads nvm.
-- autoloads default node vesion.
+However, config for oh-my-zsh doesn't have to be like that. For convenience, just open this project, make some changes, and just execute [config.sh](config.sh). 
 
-## plugins
-
-- zsh-syntax-highlighting [[1]](#1)
-- alias-tips [[2]](#2)
-
-## references
-
-- <a name="1">[1]</a>: [zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
-- <a name="2">[2]</a>: [alias-tips](https://github.com/djui/alias-tips)
+```bash
+zsh config.sh
+```

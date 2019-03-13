@@ -1,5 +1,4 @@
 # node: npm will be automatically installed with node together
-NODE_VER=11 # change this number to the node version you want
 curl -sL "https://deb.nodesource.com/setup_$NODE_VER.x" | sudo -E bash -
 apt install -y nodejs
 

@@ -1,5 +1,4 @@
 # util
-snap install wavebox
 snap install vlc
 snap install tusk   
 

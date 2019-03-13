@@ -1,20 +1,27 @@
 # env
+
 ge() {
   gedit $1 &!
 }
+
 gogh() {
   go get github.com/$1
 }
+
 goli() {
   ls $GOPATH/bin
 }
+
 gorm() {
   rm $GOPATH/bin/$1
   # TODO: resolving only one package and ask before delete it 
   # TODO: or ask several candidates and let user select it
   rm $GOPATH/src/github.com/*/$1  
 }
+
+
 # util
+
 dl() {
   # Downloads a file from the url in clipboard.
   # If no arg is given, the file name would be parsed from the url.

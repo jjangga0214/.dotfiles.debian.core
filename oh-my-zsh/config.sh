@@ -1,7 +1,14 @@
 BASE_DIR=$(dirname "$0")
+ZSH_CUSTOM=~/.oh-my-zsh/custom 
 
-sh $BASE_DIR/config.core.sh
+# aliases
+cp $BASE_DIR/aliases.zsh $ZSH_CUSTOM
 
-# .zshrc
-cp $BASE_DIR/.zshrc ~/.zshrc
+# environment variables
+cp $BASE_DIR/env.zsh $ZSH_CUSTOM
 
+# environment variables
+cp $BASE_DIR/functions.zsh $ZSH_CUSTOM
+
+# nvm 
+cp $BASE_DIR/nvm.zsh $ZSH_CUSTOM

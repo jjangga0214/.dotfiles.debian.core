@@ -9,4 +9,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/zsh-s
 git clone https://github.com/djui/alias-tips $ZSH_CUSTOM/plugins
 
 # config
-sh $BASE_DIR/config.sh
+bash $BASE_DIR/config.sh
+
+# .zshrc
+cp $BASE_DIR/.zshrc ~/.zshrc

@@ -1,6 +1,7 @@
 # env
 export S="/media/$(whoami)/SHARE"
 export DOT="~/.dotfiles"
+export ZR="~/.zshrc"
 ## GOROOT 
 ### Where go compiler would be considered installed. 
 ### /usr/local/go is the default. 
