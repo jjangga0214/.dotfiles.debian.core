@@ -10,3 +10,6 @@ bash $BASE_DIR/oh-my-zsh/install.sh
 bash $BASE_DIR/node/install.sh
 bash $BASE_DIR/go/install.sh
 # bash $BASE_DIR/python/install.sh
+
+git clone https://github.com/jjangga0214/note.git $HOME/note
+# git clone https://github.com/jjangga0214/articles.git $HOME/articles
