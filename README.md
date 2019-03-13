@@ -87,11 +87,11 @@ For setting gpg signiture on git commit, refer [here](https://gist.github.com/an
 - vscode: install it by `.deb` file from the official website. This is because vscode's snap app has _several issues [[1]](#1)_. 
 - jetbrains toolbox: install it from the official website.
 
-## license
+## [license](LICENSE)
 
-AGPL-3.0-or-later © 2019 Gil B. Chan <bnbcmindnpass@gmail.com>
+[AGPL-3.0-or-later](LICENSE) © 2019 Gil B. Chan <bnbcmindnpass@gmail.com>
 
-## footnote
+## footnotes
 
 - <a name="1">[1]</a>: keyboard and font bug. Visit [forum.snapcraft.io](https://forum.snapcraft.io/t/keyboard-input-method-doesnt-work-properly-on-snap-application/9901) for further detail.
 - <a name="2">[2]</a>: 
