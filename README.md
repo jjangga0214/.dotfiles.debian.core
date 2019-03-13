@@ -22,7 +22,7 @@ sudo git clone https://github.com/jjangga0214/.dotfiles.ubuntu.git .dotfiles
 
 ## automatic installation and configuration
 
-Basically, this project is to automatically set preferable environment with ease. [install.sh](install.sh) is for that automation. This handles apt, snap, zsh, oh-my-zsh, node, nvm, go and so on. Also, it clone jjangga0214/note to **$HOME/note**.
+Basically, this project is to automatically set preferable environment with ease. [install.sh](install.sh) is for that automation. This handles apt, snap, zsh, oh-my-zsh, node, nvm, go and so on. Also, it clones [jjangga0214/note](https://github.com/jjangga0214/note) to `$HOME`**/note**.
 
 ```bash
 sudo bash install.sh
@@ -34,7 +34,7 @@ sudo bash install.sh
 ### upgrade
 
 ```bash
-sudo bash upgrade.sh
+sudo zsh upgrade.sh
 ```
 
 ### env
@@ -66,7 +66,7 @@ setopt correct
 For understanding mantainence strategy, please read [this](oh-my-zsh/README.md#maintenance-of-zsh-and-oh-my-zsh). [oh-my-zsh.sync.sh](oh-my-zsh.sync.sh) exactly does that.
 
 ```bash
-sudo zsh oh-my-zsh.sync.sh
+zsh oh-my-zsh.sync.sh
 ```
 
 #### gnome extensions
@@ -75,7 +75,7 @@ sudo zsh oh-my-zsh.sync.sh
 
 #### signing git commit with gpg
 
-If you want gpg signiture on git commit, refer [here](https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc). Note that it might make some git tools such as gitkraken disable to commit.
+For setting gpg signiture on git commit, refer [here](https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc). Note that it's of course totally optional and might make some git tools such as gitkraken disable to commit.
 
 ### util
 
