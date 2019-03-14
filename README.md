@@ -30,13 +30,6 @@ sudo bash install.sh
 
 ## maunal installation and configuration
 
-
-### upgrade
-
-```bash
-sudo zsh upgrade.sh
-```
-
 ### env
 
 #### zsh and oh-my-zsh
@@ -86,6 +79,12 @@ For setting gpg signiture on git commit, refer [here](https://gist.github.com/an
 
 - vscode: install it by `.deb` file from the official website. This is because vscode's snap app has _several issues [[1]](#1)_. 
 - jetbrains toolbox: install it from the official website.
+
+## upgrade
+
+```bash
+sudo zsh upgrade.sh
+```
 
 ## [license](LICENSE)
 
