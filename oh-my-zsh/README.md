@@ -10,7 +10,7 @@ sudo bash install.sh
 
 ## [config.sh](config.sh)
 
-This sets aliases, functions, env vars and nvm by copying them under `$ZSH_CUSTOM`, which would be `~/.oh-my-zsh/custom`.
+This sets aliases, functions, env vars and nvm by copying them under `$ZSH_CUSTOM`, which would be **~/.oh-my-zsh/custom**.
 
 ```bash
 zsh config.sh
@@ -18,9 +18,9 @@ zsh config.sh
 
 ## maintenance of zsh and oh-my-zsh
 
-Some envionment-related tools to be integrated with shell write their config code on $HOME/.zshrc by themselves. So, to keep this project in sync, it's important to override .zshrc(in this project) by $HOME/.zshrc.
+Some envionment-related tools to be integrated with shell write their config code on `$HOME`**/.zshrc** by themselves. So, to keep this project in sync, it's important to override .zshrc(in this project) by `$HOME`**/.zshrc**.
 
-For consistency, even when manual change is written, write it directly on $HOME/.zshrc and copies the file to this project.
+For consistency, even when manual change is written, write it directly on `$HOME`**/.zshrc** and copies the file to this project.
 
 ```bash
 cp ~/zshrc ./.zshrc
