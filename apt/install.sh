@@ -10,6 +10,8 @@ apt upgrade -y
 apt install -y vim
 apt install -y curl
 apt install -y zsh
+apt install -y python3-pygments # this is dependency of colorize plugin(ccat) of oh-my-zsh. ref [here](https://github.com/robbyrussell/oh-my-zsh/issues/6616)
+# apt install -y python-pygments
 apt install -y fonts-powerline
 apt install -y p7zip-full
 # apt install -y gnome-shell-extensions
