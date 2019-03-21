@@ -66,6 +66,7 @@ plugins=(
 # custom
 zsh-syntax-highlighting 
 alias-tips
+zsh-autosuggestions
 # official
 yarn
 vscode
