@@ -5,8 +5,8 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ZSH_CUSTOM=~/.oh-my-zsh/custom 
 
 # plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/zsh-syntax-highlighting
-git clone https://github.com/djui/alias-tips $ZSH_CUSTOM/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/djui/alias-tips $ZSH_CUSTOM/plugins/alias-tips
 
 # config
 bash $BASE_DIR/config.sh
