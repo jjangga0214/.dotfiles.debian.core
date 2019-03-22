@@ -16,8 +16,7 @@ I prefer to place dotfile project under `$HOME` with name of **.dotfiles**. I ev
 
 ```bash
 sudo apt install git && \
-cd $HOME && \
-sudo git clone https://github.com/jjangga0214/.dotfiles.ubuntu.git .dotfiles
+git clone https://github.com/jjangga0214/.dotfiles.ubuntu.git $HOME/.dotfiles
 ```
 
 ## automatic installation and configuration
@@ -88,7 +87,7 @@ sudo zsh upgrade.sh
 
 ## [license](LICENSE)
 
-[AGPL-3.0-or-later](LICENSE) © 2019 Gil B. Chan <bnbcmindnpass@gmail.com>
+[AGPL-3.0-or-later](LICENSE) © 2019 GIL B. Chan <bnbcmindnpass@gmail.com>
 
 ## footnotes
 
