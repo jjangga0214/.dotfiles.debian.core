@@ -12,13 +12,15 @@ Read [CAUTION.md](CAUTION.md) before any execution here.
 
 ## clone and placement
 
-I prefer to place dotfile project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles`, which would be automatically configured. Also, note that this has (a) submodule(s).
+This project is designed to be a library(generally git submodule) for other .dotfiles project. However, this can also be used directly as .dotfiles of system. In that case, exeuctes the below. 
 
 ```bash
 sudo apt install git && \
-git clone https://github.com/jjangga0214/.dotfiles.ubuntu.git $HOME/.dotfiles && \
+git clone https://github.com/jjangga0214/.dotfiles.debian.core.git $HOME/.dotfiles && \
 cd $HOME/.dotfiles && git submodule update
 ```
+
+I prefer to place .dotfiles project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles` on [jjangga0214/.dotfiles.oh-my-zsh](https://github.com/jjangga0214/.dotfiles.oh-my-zsh), used as git submodule in this project as **.dotfiles.oh-my-zsh**. 
 
 ## automatic installation and configuration
 
