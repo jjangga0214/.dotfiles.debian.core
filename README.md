@@ -20,7 +20,7 @@ git clone https://github.com/jjangga0214/.dotfiles.debian.core.git $HOME/.dotfil
 cd $HOME/.dotfiles && git submodule update
 ```
 
-I prefer to place .dotfiles project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles` on [jjangga0214/.dotfiles.oh-my-zsh](https://github.com/jjangga0214/.dotfiles.oh-my-zsh), used as git submodule in this project as **.dotfiles.oh-my-zsh**. 
+I prefer to place .dotfiles project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles` on [jjangga0214/.dotfiles.oh-my-zsh](https://github.com/jjangga0214/.dotfiles.oh-my-zsh) which is used as [git submodule](.gitmodules) in this project as name of [.dotfiles.oh-my-zsh](.dotfiles.oh-my-zsh). 
 
 ## automatic installation and configuration
 
