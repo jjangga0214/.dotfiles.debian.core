@@ -1,4 +1,4 @@
-# .dotfiles
+# .dotfiles.debian.core
 
 ## :warning: CAUTION
 
@@ -73,7 +73,7 @@ For setting gpg signiture on git commit, refer [here](https://gist.github.com/an
 ### util
 
 - chrome: install it from the official website
-- blender: install it from ubuntu software center(ver 2.79) or the official website(ver 2.80 beta).
+- blender: install it from ubuntu software center(ver 2.79)(if ubuntu) or the official website(ver 2.80 beta).
 
 ### dev
 
