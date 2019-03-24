@@ -1,4 +1,5 @@
 # $DOTFILES_NODE_VER: integer of node version. e.g. 11
+: "${DOTFILES_NODE_VER:=11}"
 
 apt remove --purge node
 apt remove --purge nodejs

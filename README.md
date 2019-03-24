@@ -1,5 +1,7 @@
 # .dotfiles.debian.core
 
+.dotfiles commonly required from debian based distro. This project is designed to be a library(generally git submodule) for other .dotfiles project. However, this can also be used directly as .dotfiles of system. In that case, executes [#clone-and-placement](#clone-and-placement).
+
 ## :warning: CAUTION
 
 Read [CAUTION.md](CAUTION.md) before any execution here.
@@ -12,15 +14,12 @@ Read [CAUTION.md](CAUTION.md) before any execution here.
 
 ## clone and placement
 
-This project is designed to be a library(generally git submodule) for other .dotfiles project. However, this can also be used directly as .dotfiles of system. In that case, exeuctes the below. 
+I prefer to place .dotfiles project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles` on [jjangga0214/.dotfiles.oh-my-zsh](https://github.com/jjangga0214/.dotfiles.oh-my-zsh) which is used as [git submodule](.gitmodules) in this project as name of [.dotfiles.oh-my-zsh](.dotfiles.oh-my-zsh). 
 
 ```bash
 sudo apt install git && \
-git clone https://github.com/jjangga0214/.dotfiles.debian.core.git $HOME/.dotfiles && \
-cd $HOME/.dotfiles && git submodule update
+git clone --recurse-submodules -j8 https://github.com/jjangga0214/.dotfiles.debian.core.git $HOME/.dotfiles
 ```
-
-I prefer to place .dotfiles project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles` on [jjangga0214/.dotfiles.oh-my-zsh](https://github.com/jjangga0214/.dotfiles.oh-my-zsh), used as git submodule in this project as **.dotfiles.oh-my-zsh**. 
 
 ## automatic installation and configuration
 

@@ -1,4 +1,6 @@
 # $DOTFILES_DOCKER_INSTALL: true to install, false not to install docker for debian
+: "${DOTFILES_DOCKER_INSTALL:=false}"
+
 BASE_DIR=$(dirname "$0")
 
 # The order is important. 

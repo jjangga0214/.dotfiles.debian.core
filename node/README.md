@@ -4,7 +4,7 @@
 
 :warning: This removes existing `node` and `nodejs` packages and then installs new one.
 
-This is for installing node, npm, yarn, nvm, and global npm packages. You need to export `$DOTFILES_NODE_VER` as integer.
+This is for installing node, npm, yarn, nvm, and global npm packages. You can export `$DOTFILES_NODE_VER`(integer) for specifying node version(e.g. 11). If not, default value in [node.sh](./node.sh) would be used.
 
 ```bash
 sudo DOTFILES_NODE_VER=11 bash install.sh
