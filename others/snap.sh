@@ -1,3 +1,5 @@
+service snapd start
+
 # util
 snap install vlc
 snap install tusk   

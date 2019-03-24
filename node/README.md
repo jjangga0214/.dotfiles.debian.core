@@ -2,10 +2,12 @@
 
 ## [install.sh](install.sh)
 
-This is for installing node, npm, yarn, nvm, and global npm packages. You need to export `$NODE_VER` as integer.
+:warning: This removes existing `node` and `nodejs` packages and then installs new one.
+
+This is for installing node, npm, yarn, nvm, and global npm packages. You need to export `$DOTFILES_NODE_VER` as integer.
 
 ```bash
-sudo NODE_VER=11 bash install.sh
+sudo DOTFILES_NODE_VER=11 bash install.sh
 ```
 
 ### [node.sh](./node.sh)
@@ -14,7 +16,9 @@ This installs node, npm, yarn directly on system, NOT as virtual environments by
 
 ### [nvm.sh](nvm.sh)
 
-This installs nvm. nvm provides one-liner installation. However, **nvm.sh** does not use it. That's to prevent nvm config code written to .zshrc. Rather, nvm config is pre-written to dedicated file([../oh-my-zsh/nvm.zsh](../oh-my-zsh/nvm.zsh)), which would be in `$ZSH_CUSTOM` directory.
+This installs nvm. According to github's repo of [nvm](https://github.com/creationix/nvm), nvm provides one-liner installation. However, **nvm.sh** does not use it. That's to prevent nvm config code written to **.zshrc**. Rather, nvm config is pre-written to dedicated file([../.dotfiles.oh-my-zsh/nvm.zsh](../.dotfiles.oh-my-zsh/nvm.zsh)), which would be in `$ZSH_CUSTOM` directory.
+
+// TODO: edit oh-my-zsh link to submodule directory( which would be dotfiles.oh-my-zsh)
 
 <small>ref: <https://github.com/creationix/nvm#manual-install> </small>
 

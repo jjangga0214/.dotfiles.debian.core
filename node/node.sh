@@ -1,5 +1,10 @@
+# $DOTFILES_NODE_VER: integer of node version. e.g. 11
+
+apt remove --purge node
+apt remove --purge nodejs
+
 # node: npm will be automatically installed with node together
-curl -sL "https://deb.nodesource.com/setup_$NODE_VER.x" | sudo -E bash -
+curl -sL "https://deb.nodesource.com/setup_$DOTFILES_NODE_VER.x" | sudo -E bash -
 apt install -y nodejs
 
 # yarn

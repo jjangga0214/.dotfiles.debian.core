@@ -1,3 +1,4 @@
+# $DOTFILES_DOCKER_INSTALL: true to install, false not to install docker for debian
 BASE_DIR=$(dirname "$0")
 
 # The order is important. 
@@ -20,6 +21,7 @@ apt install -y chrome-gnome-shell
 apt install -y libssl-dev
 apt install -y build-essential
 apt install gcc g++ make
+apt install snapd
 
 # util
 apt install -y xclip
@@ -33,4 +35,6 @@ apt install -y boot-repair
 apt install -y git
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 apt install -y git-lfs
+if $DOTFILES_DOCKER_INSTALL; then
 bash $BASE_DIR/docker.sh
+fi

@@ -2,7 +2,7 @@
 
 ## general
 
-Every execution, installation, configuration is only tested on ubuntu 18.10, though it would be theoretically easy to tweak for other linux distos or unix-like oses.
+Every execution, installation, configuration is only tested on ubuntu 18.10 and kali-rolling, though it would be theoretically easy to tweak for other linux distos or unix-like oses.
 
 ## [install.sh](install.sh)
 
@@ -10,7 +10,7 @@ This internally executes the following scripts. So, before executing [install.sh
 
 ### [apt/install.sh](apt/install.sh)
 
-This literally only works with apt.
+This literally only works with apt. `apt` is used instead of `apt-get`.
 
 #### [apt/docker.sh](apt/docker.sh)
 
@@ -22,4 +22,4 @@ Refer [the official website's explanation](https://docs.docker.com/install/linux
 
 ### [node/install.sh](node/install.sh)
 
-[install.sh](install.sh) exports env var `$NODE_VER=11` and [node/install.sh](node/install.sh) uses `$NODE_VER`. If you want to install other version of node on system, just edit `$NODE_VER` on [install.sh](install.sh).
+[install.sh](install.sh) exports env var `$DOTFILES_NODE_VER=11` and [node/install.sh](node/install.sh) uses `$DOTFILES_NODE_VER`. If you want to install other version of node on system, just edit `$DOTFILES_NODE_VER` on [install.sh](install.sh).

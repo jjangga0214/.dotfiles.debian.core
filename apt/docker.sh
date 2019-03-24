@@ -1,20 +1,20 @@
-# [ref](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+# [ref](https://docs.docker.com/install/linux/docker-ce/debian/)
 
 # prerequistes
 apt install-y apt-transport-https
 apt install-y ca-certificates
-apt install-y gnupg-agent
+apt install-y gnupg2
 apt install-y software-properties-common 
 
 # add Docker’s official GPG key    
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 
 # just printing on the console docker's fingerprint
 apt-key fingerprint 0EBFCD88
 
 # this only works on x86_64 or amd64 architecture
 sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
    $(lsb_release -cs) \
    stable"
 
