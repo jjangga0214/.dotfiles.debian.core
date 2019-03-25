@@ -9,12 +9,12 @@ Read [CAUTION.md](CAUTION.md) before any execution here.
 ## project convention
 
 * Most directories have **README.md**. Please refer them to get detail.
-* If one can easily grasp role and effect of a certain script by just looking it, detail description is omitted in README.md. 
+* If one can easily grasp role and effect of a certain script by just looking it, detail description is omitted in README.md.
 * Most scripts and README.md do not care about specific upper level use. To know how a script is used(from 'client-side') in overall, one need to look at decription on higher level modules, which are close to project root.
 
 ## clone and placement
 
-I prefer to place .dotfiles project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles` on [jjangga0214/.dotfiles.oh-my-zsh](https://github.com/jjangga0214/.dotfiles.oh-my-zsh) which is used as [git submodule](.gitmodules) in this project as name of [.dotfiles.oh-my-zsh](.dotfiles.oh-my-zsh). 
+I prefer to place .dotfiles project under `$HOME` with name of **.dotfiles**. I even set `alias dot=cd ~/.dotfiles` on [jjangga0214/.dotfiles.oh-my-zsh](https://github.com/jjangga0214/.dotfiles.oh-my-zsh) which is used as [git submodule](.gitmodules) in this project as name of [.dotfiles.oh-my-zsh](.dotfiles.oh-my-zsh).
 
 ```bash
 sudo apt install git && \
@@ -65,7 +65,7 @@ zsh oh-my-zsh.sync.sh
 
 #### gnome extensions
 
-- Clipboard Indicator [[2]](#2)
+* Clipboard Indicator [[2]](#2)
 
 #### signing git commit with gpg
 
@@ -73,13 +73,13 @@ For setting gpg signiture on git commit, refer [here](https://gist.github.com/an
 
 ### util
 
-- chrome: install it from the official website
-- blender: install it from ubuntu software center(ver 2.79)(if ubuntu) or the official website(ver 2.80 beta).
+* chrome: install it from the official website
+* blender: install it from ubuntu software center(ver 2.79)(if ubuntu) or the official website(ver 2.80 beta).
 
 ### dev
 
-- vscode: install it by `.deb` file from the official website. This is because vscode's snap app has _several issues [[1]](#1)_. 
-- jetbrains toolbox: install it from the official website.
+* vscode: install it by `.deb` file from the official website. This is because vscode's snap app has _several issues [[1]](#1)_.
+* jetbrains toolbox: install it from the official website.
 
 ## upgrade
 
@@ -93,6 +93,6 @@ sudo zsh upgrade.sh
 
 ## footnotes
 
-- <a name="1">[1]</a>: keyboard and font bug. Visit [forum.snapcraft.io](https://forum.snapcraft.io/t/keyboard-input-method-doesnt-work-properly-on-snap-application/9901) for further detail.
-- <a name="2">[2]</a>: 
+* <a name="1">[1]</a>: keyboard and font bug. Visit [forum.snapcraft.io](https://forum.snapcraft.io/t/keyboard-input-method-doesnt-work-properly-on-snap-application/9901) for further detail.
+* <a name="2">[2]</a>: 
 [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
