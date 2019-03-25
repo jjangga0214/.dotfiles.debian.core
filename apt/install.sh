@@ -22,8 +22,13 @@ apt install -y p7zip-full
 apt install -y chrome-gnome-shell
 apt install -y libssl-dev
 apt install -y build-essential
-apt install gcc g++ make
-apt install snapd
+apt install -y gcc g++ make
+apt install -y snapd
+apt install -y fonts-nanum
+apt install -y fonts-nanum-coding
+apt install -y fonts-nanum-eco
+apt install -y fonts-nanum-extra
+apt install -y font-manager
 
 # util
 apt install -y xclip

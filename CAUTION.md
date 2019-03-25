@@ -16,18 +16,18 @@ You can export env vars to override default. Every env var has default value and
 * `$DOTFILES_DOCKER_INSTALL` (bool, `false`, [apt/install.sh](apt/install.sh)): whether to install docker (official way of installation for debian)
 * `$DOTFILES_NODE_VER` (int, `11`, [node/node.sh](node/node.sh)): node.js version to install
 
-## [install.sh](install.sh)
+## specific
 
-This internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.
+[install.sh](install.sh) internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.
 
 ### [apt/install.sh](apt/install.sh)
 
-This literally only works with apt. `apt` is used instead of `apt-get`.
+This literally only works with **apt**. `apt` is used instead of `apt-get`.
 
-#### [apt/docker.sh](apt/docker.sh)
+### [apt/docker.sh](apt/docker.sh)
 
 1. This only works on x86_64 or AMD64 architecture.
 2. This is automatically called by [apt/install.sh](apt/install.sh).
-3. This only works for ubuntu. However, ubuntu version does not matter.
+3. This only works for debian or some debian-based distro. Check if distro version is compatible (on the official site).
 
-Refer [the official website's explanation](https://docs.docker.com/install/linux/docker-ce/ubuntu/) if needed.
+Refer [the official website's explanation](https://docs.docker.com/install/linux/docker-ce/debian/) if needed.
