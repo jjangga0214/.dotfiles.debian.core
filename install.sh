@@ -6,7 +6,8 @@ bash $BASE_DIR/others/config.sh
 bash $BASE_DIR/others/snap.sh
 bash $BASE_DIR/.dotfiles.oh-my-zsh/install.sh
 bash $BASE_DIR/node/install.sh
-bash $BASE_DIR/go/install.sh
+# go/install.sh should be latter than .dotfiles.oh-my-zsh/install.sh due to $GOROOT resolution
+bash $BASE_DIR/go/install.sh 
 # bash $BASE_DIR/python/install.sh
 
 git clone https://github.com/jjangga0214/note.git $HOME/note
