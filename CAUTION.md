@@ -6,6 +6,7 @@
 * Git submodules are used.
   * Create or checkout a branch before making commit.
   * Check their CAUTION.md (if existing) as well.
+    * [.dotfiles.oh-my-zsh/CAUTION.md](.dotfiles.oh-my-zsh/CAUTION.md)
 
 ## environment variables
 
