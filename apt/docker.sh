@@ -1,4 +1,10 @@
 # [ref](https://docs.docker.com/install/linux/docker-ce/debian/)
+# DOTFILES_DOCKER_DEBIAN_RELEASE: (e.g. "stretch", "jessie")
+DOTFILES_DOCKER_DEBIAN_RELEASE=${DOTFILES_DOCKER_DEBIAN_RELEASE:=$(lsb_release -cs)}
+
+echo "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $DOTFILES_DOCKER_DEBIAN_RELEASE \
+   stable"
 
 # prerequistes
 apt install -y apt-transport-https
@@ -15,10 +21,10 @@ apt-key fingerprint 0EBFCD88
 # this only works on x86_64 or amd64 architecture
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
+   $DOTFILES_DOCKER_DEBIAN_RELEASE \
    stable"
 
-# Make sure you are about to install from the Docker repo instead of the default Ubuntu repo
+# Make sure you are about to install from the Docker repo instead of the default repo
 # apt-cache policy docker-ce
 
 # installing docker ce 

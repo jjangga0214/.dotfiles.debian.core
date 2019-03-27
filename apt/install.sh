@@ -1,5 +1,5 @@
-# $DOTFILES_DOCKER_INSTALL: true to install, false not to install docker for debian
-: "${DOTFILES_DOCKER_INSTALL:=false}"
+# $DOTFILES_DEBIAN_CORE_DOCKER_INSTALL: true to install, false not to install docker for debian
+: "${DOTFILES_DEBIAN_CORE_DOCKER_INSTALL:=false}"
 
 BASE_DIR=$(dirname "$0")
 
@@ -42,6 +42,6 @@ apt install -y boot-repair
 apt install -y git
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 apt install -y git-lfs
-if $DOTFILES_DOCKER_INSTALL; then
+if $DOTFILES_DEBIAN_CORE_DOCKER_INSTALL; then
 bash $BASE_DIR/docker.sh
 fi

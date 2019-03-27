@@ -13,7 +13,9 @@ You can export env vars to override default. Every env var has default value and
 
 (type, default value, source file)
 
-* `$DOTFILES_DOCKER_INSTALL` (bool, `false`, [apt/install.sh](apt/install.sh)): whether to install docker (official way of installation for debian)
+* `$DOTFILES_DEBIAN_CORE_DOCKER_INSTALL` (bool, `false`, [apt/install.sh](apt/install.sh)): whether to install docker 
+(official way of installation for debian)
+* `$DOTFILES_DOCKER_DEBIAN_RELEASE` (string, `"stretch"`, [apt/docker.sh](apt/docker.sh)): debian version to specify while installing docker
 * `$DOTFILES_NODE_VER` (int, `11`, [node/node.sh](node/node.sh)): node.js version to install
 
 ## specific
