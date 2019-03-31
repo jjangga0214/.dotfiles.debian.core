@@ -16,7 +16,6 @@ apt install -y zsh
 # python3-pygments is a dependency of colorize plugin (ccat) of oh-my-zsh. 
 # ref [here](https://github.com/robbyrussell/oh-my-zsh/issues/6616)
 apt install -y python3-pygments # apt install -y python-pygments
-apt install -y fonts-powerline
 apt install -y p7zip-full
 # apt install -y gnome-shell-extensions
 apt install -y chrome-gnome-shell
@@ -24,10 +23,16 @@ apt install -y libssl-dev
 apt install -y build-essential
 apt install -y gcc g++ make
 apt install -y snapd
+apt install -y powerline
+apt install -y fonts-powerline
 apt install -y fonts-nanum
 apt install -y fonts-nanum-coding
 apt install -y fonts-nanum-eco
 apt install -y fonts-nanum-extra
+apt install -y fonts-naver-d2coding
+apt install -y fonts-hack
+apt install -y fonts-font-awesome
+apt install -y ruby-font-awesome-rails # for colorls icons
 apt install -y font-manager
 
 # util

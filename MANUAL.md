@@ -34,9 +34,14 @@ For understanding mantainence strategy, please read [this](oh-my-zsh/README.md#m
 zsh oh-my-zsh.sync.sh
 ```
 
+### terminal
+
+* set font as **Hack Regular**
+
 ### gnome extensions
 
 * Clipboard Indicator [[2]](#2)
+* [docker status](https://extensions.gnome.org/extension/1065/docker-status/)
 
 ### signing git commit with gpg
 
