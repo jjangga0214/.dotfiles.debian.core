@@ -59,6 +59,12 @@ For setting gpg signiture on git commit, refer [here](https://gist.github.com/an
   * **settings sync** ([github](https://github.com/shanalikhan/code-settings-sync)) : My gist id for setting file is **b607c99a1305a67239d653e29cc21aac**.
 * jetbrains toolbox: install it from the official website.
 
+## sync oh-my-zsh
+
+```bash
+bash oh-my-zsh.sync.sh
+```
+
 ## upgrade
 
 ```bash
