@@ -37,6 +37,11 @@ zsh oh-my-zsh.sync.sh
 ### terminal
 
 * set font as **Hack Regular**
+* [Mayccoll/Gogh](https://github.com/Mayccoll/Gogh): currently `Aci`
+
+### others 
+
+* [sharkdp/bat](https://github.com/sharkdp/bat)
 
 ### gnome extensions
 

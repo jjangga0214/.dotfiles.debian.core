@@ -21,7 +21,10 @@ You can export env vars to override default. Every env var has default value and
 
 ## specific
 
-[install.sh](install.sh) internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.
+### [install.sh](install.sh)
+
+* It does `rm -rf $HOME/.cheat` before cloning [jjangga0214/.cheat](https://github.com/jjangga0214/.cheat.git).
+* [install.sh](install.sh) internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.
 
 ### [apt/install.sh](apt/install.sh)
 

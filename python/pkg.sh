@@ -1,2 +1,2 @@
-pip install eg
-pip install cheat
+pip3 install eg
+pip3 install cheat

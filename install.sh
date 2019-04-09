@@ -14,3 +14,5 @@ bash $BASE_DIR/ruby/install.sh
 
 git clone https://github.com/jjangga0214/note.git $HOME/note
 # git clone https://github.com/jjangga0214/articles.git $HOME/articles
+rm -rf $HOME/.cheat # caution: this removes existing directory
+git clone https://github.com/jjangga0214/.cheat.git $HOME/.cheat
