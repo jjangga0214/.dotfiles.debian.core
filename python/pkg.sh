@@ -1,3 +1,3 @@
 pip3 install eg
 pip3 install cheat
-pip3 install awscli
+pip3 install awscli --upgrade --user
