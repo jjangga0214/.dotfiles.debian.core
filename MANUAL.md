@@ -39,7 +39,11 @@ zsh oh-my-zsh.sync.sh
 * set font as **Hack Regular**
 * [Mayccoll/Gogh](https://github.com/Mayccoll/Gogh): currently `Aci`
 
-### others 
+### flatpak
+
+Execute [flatpak/pkg.sh](flatpak/pkg.sh) AFTER REBOOTING of the system.
+
+### others
 
 * [sharkdp/bat](https://github.com/sharkdp/bat)
 
