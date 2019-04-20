@@ -23,6 +23,7 @@ apt install -y libssl-dev
 apt install -y build-essential
 apt install -y gcc g++ make
 apt install -y snapd
+apt install -y flatpak gnome-software-plugin-flatpak && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 apt install -y powerline
 apt install -y fonts-powerline
 apt install -y fonts-nanum
