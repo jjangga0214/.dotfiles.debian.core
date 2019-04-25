@@ -4,3 +4,4 @@ npm i -g public-ip-cli
 npm i -g tldr
 npm i -g serverless
 npm i -g uuid
+npm i -g @vue/cli
