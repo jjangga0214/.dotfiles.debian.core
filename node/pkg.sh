@@ -5,4 +5,6 @@ npm i -g tldr
 npm i -g serverless
 npm i -g uuid
 npm i -g @vue/cli
+npm i -g serve
+npm i -g livereload
 npm i -g svgo
