@@ -8,3 +8,5 @@ npm i -g @vue/cli
 npm i -g serve
 npm i -g livereload
 npm i -g svgo
+npm i -g eslint
+
