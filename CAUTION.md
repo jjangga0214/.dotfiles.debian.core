@@ -2,11 +2,11 @@
 
 ## general
 
-* Every execution, installation, configuration is only tested on ubuntu 18.10 and kali-rolling, though it would be theoretically easy to tweak for other linux distos or unix-like OS.
-* Git submodules are used.
-  * Create or checkout a branch before making commit.
-  * Check their CAUTION.md (if existing) as well.
-    * [.dotfiles.oh-my-zsh/CAUTION.md](.dotfiles.oh-my-zsh/CAUTION.md)
+- Every execution, installation, configuration is only tested on ubuntu 18.10 and kali-rolling, though it would be theoretically easy to tweak for other linux distos or unix-like OS.
+- Git submodules are used.
+  - Create or checkout a branch before making commit.
+  - Check their CAUTION.md (if existing) as well.
+    - [.dotfiles.oh-my-zsh/CAUTION.md](.dotfiles.oh-my-zsh/CAUTION.md)
 
 ## environment variables
 
@@ -14,17 +14,17 @@ You can export env vars to override default. Every env var has default value and
 
 (type, default value, source file)
 
-* `$DOTFILES_DEBIAN_CORE_DOCKER_INSTALL` (bool, `false`, [apt/install.sh](apt/install.sh)): whether to install docker 
-(official way of installation for debian)
-* `$DOTFILES_DOCKER_DEBIAN_RELEASE` (string, `"stretch"`, [apt/docker.sh](apt/docker.sh)): debian version to specify while installing docker
-* `$DOTFILES_NODE_VER` (int, `11`, [node/node.sh](node/node.sh)): node.js version to install
+- `$DOTFILES_DEBIAN_CORE_DOCKER_INSTALL` (bool, `false`, [apt/install.sh](apt/install.sh)): whether to install docker
+  (official way of installation for debian)
+- `$DOTFILES_DOCKER_DEBIAN_RELEASE` (string, `"stretch"`, [apt/docker.sh](apt/docker.sh)): debian version to specify while installing docker
+- `$DOTFILES_NODE_VER` (int, `11`, [node/node.sh](node/node.sh)): node.js version to install
 
 ## specific
 
 ### [install.sh](install.sh)
 
-* It does `rm -rf $HOME/.cheat` before cloning [jjangga0214/.cheat](https://github.com/jjangga0214/.cheat.git).
-* [install.sh](install.sh) internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.
+- It does `rm -rf $HOME/.cheat` before cloning [jjangga0214/.cheat](https://github.com/jjangga0214/.cheat.git).
+- [install.sh](install.sh) internally executes the following scripts. So, before executing [install.sh](install.sh), be careful of cautions below.
 
 ### [apt/install.sh](apt/install.sh)
 
