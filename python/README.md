@@ -10,3 +10,7 @@ Preinstalled python 2 and 3 (with `pip2` and `pip3`) are only intended to be use
 - `pip3`
 - `pyenv`
 - `pipenv`
+
+## Environment variable
+
+`$PYENV_ROOT` should be set. To see which path the variable is set as, go to [./dotfiles.oh-my-zsh](./dotfiles.oh-my-zsh).
