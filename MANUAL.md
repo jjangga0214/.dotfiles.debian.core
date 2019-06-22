@@ -35,18 +35,22 @@ setopt correct
 
 Execute [flatpak/pkg.sh](flatpak/pkg.sh) AFTER REBOOTING of the system.
 
-### others
-
-- [sharkdp/bat](https://github.com/sharkdp/bat)
-
 ### gnome extensions
 
 - Clipboard Indicator [[2]](#2)
 - [docker status](https://extensions.gnome.org/extension/1065/docker-status/)
 
+### others
+
+- [sharkdp/bat](https://github.com/sharkdp/bat)
+- [minikube](https://github.com/kubernetes/minikube/releases)
+- [docker-compose](https://docs.docker.com/compose/install/)
+- [docker-machine](https://docs.docker.com/machine/install-machine/)
+
 ### signing git commit with gpg
 
 For setting gpg signiture on git commit, refer [here](https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc). Note that it's of course totally optional and might make some git tools such as gitkraken disable to commit.
+
 
 ## util
 
