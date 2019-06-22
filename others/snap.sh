@@ -1,5 +1,8 @@
 service snapd start
 
+# env
+snap install kubectl --classic
+
 # util
 snap install vlc
 snap install tusk   
