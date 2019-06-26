@@ -1,1 +1,1 @@
-cargo installl gifski
+cargo install gifski
