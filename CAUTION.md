@@ -8,6 +8,10 @@
   - Check their CAUTION.md (if existing) as well.
     - [.dotfiles.oh-my-zsh/CAUTION.md](.dotfiles.oh-my-zsh/CAUTION.md)
 
+## installation
+
+Rust installation is interactive. Choose custom installation from the prompt. Then choose NOT auto-modifying `PATH` by installer.
+
 ## environment variables
 
 You can export env vars to override default. Every env var has default value and respects exported value over default.
