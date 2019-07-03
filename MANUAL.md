@@ -43,6 +43,9 @@ Execute [flatpak/pkg.sh](flatpak/pkg.sh) AFTER REBOOTING of the system.
 ### others
 
 - [sharkdp/bat](https://github.com/sharkdp/bat)
+  - syntax file
+    - how to add a new syntax: https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions
+    - add syntax for vue: read [this issue](https://github.com/sharkdp/bat/issues/56)
 - [minikube](https://github.com/kubernetes/minikube/releases)
 - [docker-compose](https://docs.docker.com/compose/install/)
 - [docker-machine](https://docs.docker.com/machine/install-machine/)
