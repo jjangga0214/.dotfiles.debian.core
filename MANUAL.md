@@ -40,11 +40,19 @@ Execute [flatpak/pkg.sh](flatpak/pkg.sh) AFTER REBOOTING of the system.
 - Clipboard Indicator [[2]](#2)
 - [docker status](https://extensions.gnome.org/extension/1065/docker-status/)
 
+### rust
+
+```bash
+sudo bash rust/install.sh
+```
+
+Rust installation is interactive. Choose custom installation from the prompt. Then choose NOT auto-modifying `PATH` by installer.
+
 ### others
 
 - [sharkdp/bat](https://github.com/sharkdp/bat)
   - syntax file
-    - how to add a new syntax: https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions
+    - how to add a new syntax: <https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions>
     - add syntax for vue: read [this issue](https://github.com/sharkdp/bat/issues/56)
 - [minikube](https://github.com/kubernetes/minikube/releases)
 - [docker-compose](https://docs.docker.com/compose/install/)
@@ -53,7 +61,6 @@ Execute [flatpak/pkg.sh](flatpak/pkg.sh) AFTER REBOOTING of the system.
 ### signing git commit with gpg
 
 For setting gpg signiture on git commit, refer [here](https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc). Note that it's of course totally optional and might make some git tools such as gitkraken disable to commit.
-
 
 ## util
 
