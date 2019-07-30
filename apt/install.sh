@@ -35,6 +35,8 @@ apt install -y fonts-hack
 apt install -y fonts-font-awesome
 apt install -y ruby-font-awesome-rails # for colorls icons
 apt install -y font-manager
+apt install -y dconf-editor
+apt install -y ubuntu-restricted-extras
 
 # util
 apt install -y xclip
