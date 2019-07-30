@@ -40,9 +40,11 @@ apt install -y font-manager
 apt install -y xclip
 apt install -y trash-cli
 apt install -y gparted
-add-apt-repository -y ppa:yannubuntu/boot-repair
+add-apt-repository -y ppa:yannubuntu/boot-repair # boot-repair
+add-apt-repository -y ppa:ricotz/docky # plank
 apt update
 apt install -y boot-repair
+apt install -y plank
 
 # dev
 apt install -y git
