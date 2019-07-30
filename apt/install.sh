@@ -36,7 +36,7 @@ apt install -y fonts-font-awesome
 apt install -y ruby-font-awesome-rails # for colorls icons
 apt install -y font-manager
 apt install -y dconf-editor
-apt install -y ubuntu-restricted-extras
+apt install -y ubuntu-restricted-extras # media codecs
 
 # util
 apt install -y xclip
@@ -47,6 +47,9 @@ add-apt-repository -y ppa:ricotz/docky # plank
 apt update
 apt install -y boot-repair
 apt install -y plank
+# [ref](https://askubuntu.com/questions/583517/unpinned-docky-plank-icon-from-docky-plank-docks-and-cant-pin-it-on-again)
+dconf write /net/launchpad/plank/docks/dock1/show-dock-item false 
+apt install -y flameshot
 
 # dev
 apt install -y git
