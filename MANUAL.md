@@ -35,10 +35,55 @@ setopt correct
 
 Execute [flatpak/pkg.sh](flatpak/pkg.sh) AFTER REBOOTING of the system.
 
-### gnome extensions
+### gnome
+
+These settings are, of cource, optional.
+
+```bash
+# to enable minimize animation of window
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+# to show battery percentage metric on top shell
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+```
+
+#### extensions
 
 - Clipboard Indicator [[2]](#2)
 - [docker status](https://extensions.gnome.org/extension/1065/docker-status/)
+
+### dock
+
+#### to hide default dock
+
+To hide default dock, execute the commands below. (replace `false` to `true` to revert)
+
+```bash
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock intellihide false
+```
+
+#### dash to dock
+
+You can consider installing [dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+
+#### plank
+
+To make plank autostart on boot, create a new file **~/.config/autostart/plank.desktop** and set its content like the below. [ref](https://www.jernejsila.com/2017/02/03/install-plank-ubuntu-make-start-boot/)
+
+```
+[Desktop Entry]
+Type=Application
+Exec=plank
+Hidden=false
+NoDisplay=false
+Name[en_US]=plank
+Name=plank
+Comment[en_US]=plank
+Comment=plank
+X-GNOME-Autostart-Delay=2
+X-GNOME-Autostart-enabled=true
+```
 
 ### rust
 
