@@ -50,6 +50,9 @@ gsettings set org.gnome.desktop.interface show-battery-percentage true
 
 - Clipboard Indicator [[2]](#2)
 - [docker status](https://extensions.gnome.org/extension/1065/docker-status/)
+- [gs connect](https://extensions.gnome.org/extension/1319/gsconnect/)
+  - ref: <https://github.com/andyholmes/gnome-shell-extension-gsconnect/wiki>
+  - note: download android app, allow permissions(double check on setting app), install browser extension
 
 ### dock
 
