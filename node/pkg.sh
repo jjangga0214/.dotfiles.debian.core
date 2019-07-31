@@ -10,4 +10,5 @@ npm i -g livereload
 npm i -g svgo
 npm i -g eslint
 npm i -g prettier
+npm i -g now
 
