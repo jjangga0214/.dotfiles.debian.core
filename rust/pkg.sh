@@ -1,1 +1,1 @@
-cargo install gifski
+# cargo install gifski

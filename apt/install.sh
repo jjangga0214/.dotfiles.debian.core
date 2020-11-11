@@ -43,12 +43,12 @@ apt install -y xclip
 apt install -y trash-cli
 apt install -y gparted
 add-apt-repository -y ppa:yannubuntu/boot-repair # boot-repair
-add-apt-repository -y ppa:ricotz/docky # plank
+# add-apt-repository -y ppa:ricotz/docky # plank
 apt update
 apt install -y boot-repair
-apt install -y plank
+# apt install -y plank
 # [ref](https://askubuntu.com/questions/583517/unpinned-docky-plank-icon-from-docky-plank-docks-and-cant-pin-it-on-again)
-dconf write /net/launchpad/plank/docks/dock1/show-dock-item false 
+# dconf write /net/launchpad/plank/docks/dock1/show-dock-item false 
 apt install -y flameshot
 
 # dev
