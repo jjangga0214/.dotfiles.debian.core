@@ -6,7 +6,7 @@ At least currently, some tasks are to be manually handled.
 
 ### zsh and oh-my-zsh
 
-zsh and oh-my-zsh would be installed and configured automatically. However, following config is recommended to do manually.
+zsh and oh-my-zsh would not be installed and configured. After manual installtion, following config is recommended to do manually.
 
 #### default shell
 
